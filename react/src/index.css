@@ -1,0 +1,104 @@
+@tailwind base;
+
+body {
+  @apply bg-sky-50 font-sans;
+}
+
+h1 {
+  @apply text-2xl font-bold mb-2;
+}
+
+input {
+  @apply bg-white w-full border-secondary border-2 p-3 mb-4 rounded-lg  focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400;
+}
+
+.btn {
+  @apply bg-primary text-white font-medium p-4 py-2 text-base rounded-md cursor-pointer hover:bg-opacity-80 transition-all duration-300 ease-in-out;
+}
+
+.btn-block {
+  @apply w-full;
+}
+
+.btn-add {
+  @apply bg-success;
+}
+.btn-edit {
+  @apply bg-warning;
+}
+.btn-delete {
+  @apply bg-danger;
+}
+
+.btn-logout {
+  @apply py-3 px-6 text-dark hover:opacity-80 transition-all duration-300 ease-in-out;
+}
+
+table {
+  @apply w-full border-collapse;
+}
+
+table > thead > tr > th {
+  @apply text-left p-2 bg-light;
+}
+
+table > tbody > tr > td {
+  @apply p-2 border-b-2 border-light whitespace-nowrap;
+}
+
+@tailwind components;
+
+.card {
+  @apply bg-white rounded-md shadow-md py-5 px-6 mb-4 mt-2;
+}
+
+.alert {
+  @apply p-4 bg-danger text-white rounded-md mb-4;
+}
+
+.notification {
+  @apply fixed right-4 bottom-4 z-[100] py-4 px-6 bg-success text-white rounded-md;
+}
+
+/* Login/Signup forms*/
+
+.login-signup-form {
+  @apply h-screen flex justify-center items-center;
+}
+
+.login-signup-form .form {
+  @apply w-[360px] relative z-[1] bg-blue-100 max-w-[360px] p-9 shadow-lg rounded-md;
+}
+.login-signup-form .title {
+  @apply text-2xl mb-8 font-semibold  text-center;
+}
+.login-signup-form .form .message {
+  @apply mt-4 text-secondary text-base text-center;
+}
+.login-signup-form .form .message a {
+  @apply text-primary hover:opacity-80;
+}
+
+/* Login/Signup form */
+
+#defaultLayout {
+  @apply flex;
+}
+#defaultLayout aside {
+  @apply w-60 bg-primary p-4 h-screen;
+}
+#defaultLayout aside > a {
+  @apply block py-3 px-4 rounded text-white;
+}
+#defaultLayout .content {
+  @apply flex-1;
+}
+#defaultLayout header {
+  @apply h-20 py-8 px-12 bg-white shadow-md flex justify-between items-center;
+}
+
+#defaultLayout main {
+  @apply p-8;
+}
+
+@tailwind utilities;
